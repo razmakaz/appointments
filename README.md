@@ -23,12 +23,12 @@ generated appointments.
 ```
 
 # Endpoints
+There's a postman file you can use to see more information about the endpoints.
 ```
-GET /appointments | Returns all appointments.
-GET /appointments/{id} | Returns an appointment with specified ID.
-POST /appointments | Creates a new appointment.
-    - appointment and customer are required.
-PATCH /appointments/{id} | Updates an existing appointment with specified ID
-    - any field can be updated except id
-DELETE /appointments/{id} | Deletes an appointment with specified ID
-```  
+GET /appointments
+GET /appointments/{id}
+GET /appointments/by_date/{date}
+POST /appointments
+PATCH /appointments/{id}
+DELETE /appointments/{id}
+```
